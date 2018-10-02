@@ -4,7 +4,7 @@ let fetchByName = (title, year, plotLen) => {
 		type: "GET",
 		datatype: "JSON",
 		async: true,
-		url: `http://www.omdbapi.com/?s=${title}&y=${year}&plot=${plotLen}&apikey=7b29e36d`,
+		url: `https://www.omdbapi.com/?s=${title}&y=${year}&plot=${plotLen}&apikey=7b29e36d`,
 		success : (response) => {
 			console.log(response);
 			if(response.Response == "True") {
