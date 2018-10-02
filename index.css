@@ -133,5 +133,8 @@ button{
 	.card{
 		width:73vw;
 	}
+	#title-btn, #id-btn{
+		height: 10vh;
+	}
 }
 
