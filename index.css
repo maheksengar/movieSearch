@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	font-family: K2D, sans-serif;
+	color: #aeaeae;
+}
+
+body{
+	background-image: url("cinema1.jpg");
+	/*border:0.5px solid;*/
+	background-size: cover;
+}
+
+#heading {
+	text-align: center;
+	margin:2vh;
+	font-family: K2D;
+	color: #aeaeae;
+}
+
+
+#fs-1, #fs-2{
+	display: none;
+}
+fieldset {
+	border: 1.5px solid #d0d0d0 !important;
+	border-top-style: initial !important;
+	border-radius: 8px !important;
+	margin: 3vh 2vw !important;
+	padding: 0;
+	font-size: 1.2rem;
+	/*color: #aeaeae;*/
+}
+
+input{
+	width: 20%;
+	height: 6vh;
+	margin: 3vh 1.5vw !important;
+	font-size: inherit;
+	border-style: groove;
+	border-radius: 5px;
+	padding:1vh 1vh;
+}
+input:focus {
+	background-color: transparent;
+	color: #aeaeae;
+}
+#imdbid>input {
+	width: 35%;
+
+}
+select {
+	/*width: 20%;*/
+	height: 6vh;
+	margin: 3vh 1.5vw !important;
+	font-size: inherit;
+	border-style: groove;
+	border-radius: 5px;
+	padding:1vh 1vh;
+}
+select:hover {
+	border: 1.3px groove #010101;
+}
+
+.form-container {
+	display: flex;
+	align-items: center;
+	margin-top: 0 !important;
+}
+button{
+	/*width: 15%;*/
+	height: 7vh;
+	margin: 3vh 1vw !important;
+	background-color: #4da6ff;
+	border-radius: 5px !important;
+	border: 1px groove #4da6ff !important;
+	color: #fbfbfb;
+	letter-spacing: 2px;
+	font-size: 1.1rem;
+}
+
+
+.card {
+	margin: 6vh 5vw;
+	display: none ;
+	width: 35vw;
+	color: initial;
+}
+.card-container{
+	display: none;
+	flex-wrap: wrap;
+	color: initial;
+
+}
+.card-text{
+	border-top: 1px solid black;
+	padding-top: 2vh;
+	color: initial;
+}
+
+@media screen and (max-width: 768px) {
+	.form-container{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	input, select, button{
+		margin: 1.5vh 1.5vw !important;
+	}
+	.btns{
+		width: 75% ;
+	}
+	select{
+		width: 65%;
+	}
+	.plotselect{
+		width: 90%;
+	}
+	.card{
+		width:50vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		font-size: 13px;
+	}
+	.card{
+		width:73vw;
+	}
+}
+
