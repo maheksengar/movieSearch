@@ -63,7 +63,7 @@ let fetchByID = (id, plotLen) => {
 		type: "GET",
 		datatype: "JSON",
 		async: true,
-		url: `http://www.omdbapi.com/?i=${id}&plot=${plotLen}&apikey=7b29e36d`,
+		url: `https://www.omdbapi.com/?i=${id}&plot=${plotLen}&apikey=7b29e36d`,
 		success : (response) => {
 			console.log(response);
 			if(response.Response == "True") {
