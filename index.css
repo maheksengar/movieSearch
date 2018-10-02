@@ -8,6 +8,7 @@ body{
 	background-image: url("cinema1.jpg");
 	/*border:0.5px solid;*/
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 #heading {
@@ -106,6 +107,11 @@ button{
 	input, select, button{
 		margin: 1.5vh 1.5vw !important;
 	}
+	
+	input:focus, select:focus{
+		height: 8vh;
+	}
+	
 	.btns{
 		width: 75% ;
 	}
